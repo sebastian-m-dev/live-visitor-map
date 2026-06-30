@@ -2,17 +2,17 @@
 Contributors: sebastian-m-dev
 Tags: analytics, visitor map, real-time, tracking, live map, geo location, dashboard, glassmorphism
 Requires at least: 5.0
-Tested up to: 6.9
+Tested up to: 7.0
 Stable tag: 1.1.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Real-time visitor tracking with a live map showing visitor locations, session analytics, and an interactive dashboard with animated glassmorphism UI.
+Simple and powerfull real-time visitor tracking with a live map showing visitor locations, session analytics, and an interactive dashboard with animated glassmorphism UI.
 
 == Description ==
 
-Live Visitor Map gives you a real-time view of your website visitors on an interactive map. Track visitor locations, session durations, page views, and more — all from a beautiful glassmorphism admin dashboard with animated mesh background.
+Simple and powerfull , SM Live Visitor Map gives you a real-time view of your website visitors on an interactive map. Track visitor locations, session durations, page views, and more — all from a beautiful glassmorphism admin dashboard with animated mesh background.
 
 = Key Features =
 

@@ -8,7 +8,7 @@ Author: Sebastian Morales
 Author URI: https://sebastianmorales.site
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: live-visitor-map
+Text Domain: sm-live-visitor-map
 Domain Path: /languages
 Icon: assets/icon-128x128.png
 */
@@ -408,12 +408,12 @@ class Live_Visitor_Map
             return;
 ?>
 <div class="wrap" style="max-width:720px;margin:20px auto;color:#fff;">
-    <h1><?php esc_html_e('Live Visitor Map Settings', 'live-visitor-map'); ?></h1>
+    <h1><?php esc_html_e('Live Visitor Map Settings', 'sm-live-visitor-map'); ?></h1>
     <form method="post" action="options.php" style="background:rgba(255,255,255,0.04);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:32px;margin-top:24px;">
         <?php settings_fields('lvm_settings'); ?>
         <table class="form-table" role="presentation">
             <tr>
-                <th scope="row"><label for="lvm_exclude_roles"><?php esc_html_e('Exclude Roles', 'live-visitor-map'); ?></label></th>
+                <th scope="row"><label for="lvm_exclude_roles"><?php esc_html_e('Exclude Roles', 'sm-live-visitor-map'); ?></label></th>
                 <td>
                     <select name="lvm_exclude_roles[]" id="lvm_exclude_roles" multiple style="width:100%;min-height:120px;background:#1e1e2e;color:#fff;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:8px;">
                         <?php
@@ -428,27 +428,27 @@ class Live_Visitor_Map
                         }
                         ?>
                     </select>
-                    <p class="description" style="color:rgba(255,255,255,0.5);margin-top:6px;"><?php esc_html_e('Users with these roles will not be tracked.', 'live-visitor-map'); ?></p>
+                    <p class="description" style="color:rgba(255,255,255,0.5);margin-top:6px;"><?php esc_html_e('Users with these roles will not be tracked.', 'sm-live-visitor-map'); ?></p>
                 </td>
             </tr>
             <tr>
-                <th scope="row"><label for="lvm_retention_days"><?php esc_html_e('Data Retention', 'live-visitor-map'); ?></label></th>
+                <th scope="row"><label for="lvm_retention_days"><?php esc_html_e('Data Retention', 'sm-live-visitor-map'); ?></label></th>
                 <td>
                     <input type="number" name="lvm_retention_days" id="lvm_retention_days" value="<?php echo esc_attr(get_option('lvm_retention_days', 90)); ?>" min="1" max="365" style="width:100px;background:#1e1e2e;color:#fff;border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:8px;">
-                    <p class="description" style="color:rgba(255,255,255,0.5);margin-top:6px;"><?php esc_html_e('Auto-delete visits older than this many days (runs daily).', 'live-visitor-map'); ?></p>
+                    <p class="description" style="color:rgba(255,255,255,0.5);margin-top:6px;"><?php esc_html_e('Auto-delete visits older than this many days (runs daily).', 'sm-live-visitor-map'); ?></p>
                 </td>
             </tr>
             <tr>
-                <th scope="row"><?php esc_html_e('Anonymize IPs', 'live-visitor-map'); ?></th>
+                <th scope="row"><?php esc_html_e('Anonymize IPs', 'sm-live-visitor-map'); ?></th>
                 <td>
                     <label>
                         <input type="checkbox" name="lvm_anonymize_ip" value="1" <?php checked(get_option('lvm_anonymize_ip', 0), 1); ?> style="accent-color:#4aff8f;">
-                        <?php esc_html_e('Store anonymized IPs (last octet set to 0)', 'live-visitor-map'); ?>
+                        <?php esc_html_e('Store anonymized IPs (last octet set to 0)', 'sm-live-visitor-map'); ?>
                     </label>
                 </td>
             </tr>
         </table>
-        <?php submit_button(__('Save Settings', 'live-visitor-map'), 'primary', 'submit', false, ['style' => 'background:linear-gradient(135deg,#7c5cfc,#5b3dc7);border:none;padding:10px 24px;border-radius:8px;cursor:pointer;color:#fff;font-weight:600;margin-top:16px;']); ?>
+        <?php submit_button(__('Save Settings', 'sm-live-visitor-map'), 'primary', 'submit', false, ['style' => 'background:linear-gradient(135deg,#7c5cfc,#5b3dc7);border:none;padding:10px 24px;border-radius:8px;cursor:pointer;color:#fff;font-weight:600;margin-top:16px;']); ?>
     </form>
 </div>
 <?php
